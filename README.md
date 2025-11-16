@@ -10,6 +10,10 @@ This is not a complete project, but rather a collection of reusable code pattern
 
 - [View all courses](https://nicholasmgoldstein.com/courses)
 
+## Support
+
+If you find this course helpful, please consider subscribing and liking on [YouTube @goldsteinnick](https://www.youtube.com/@goldsteinnick)!
+
 **Build AI Platforms from Scratch**
 
   - **Module 1: Getting Started** - Learn to build powerful AI-powered applications and platforms from scratch. This course focuses on design, architecture, and engineering, NOT coding. - [View Module](https://nicholasmgoldstein.com/course/build-ai-platforms/module/1)
