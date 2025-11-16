@@ -1,0 +1,33 @@
+TypeScript/Vite:
+npm create vite@latest my-project-name -- --template vanilla-ts
+cd my-project-name
+npm install
+npm run dev
+________________________
+Go/Gin:
+mkdir my-project-name
+cd my-project-name
+go mod init github.com/yourusername/my-project-name
+go get -u github.com/gin-gonic/gin
+
+Then create main.go:
+package main
+
+import "github.com/gin-gonic/gin"
+
+func main() {
+    r := gin.Default()
+    r.GET("/ping", func(c *gin.Context) {
+        c.JSON(200, gin.H{"message": "pong"})
+    })
+    r.Run(":8080")
+}
+
+Run with: go run main.go
+________________________
+Flutter:
+flutter create my_project_name
+cd my_project_name
+flutter run
+
+(You'll need Flutter SDK installed first: https://docs.flutter.dev/get-started/install)
