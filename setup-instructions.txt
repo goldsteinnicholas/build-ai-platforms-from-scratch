@@ -1,3 +1,5 @@
+Note: You can also ask an AI assistant for help with setup if you run into any issues or need platform-specific instructions.
+
 TypeScript/Vite:
 npm create vite@latest my-project-name -- --template vanilla-ts
 cd my-project-name
@@ -26,8 +28,14 @@ func main() {
 Run with: go run main.go
 ________________________
 Go/Gin with GORM & Postgres:
-First, set up Postgres (using Docker):
-docker run --name postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=mydb -p 5432:5432 -d postgres
+First, install Postgres:
+- macOS: brew install postgresql@15 (or latest) then brew services start postgresql@15
+- Linux: sudo apt-get install postgresql postgresql-contrib (Ubuntu/Debian) or use your distro's package manager
+- Windows: Download from https://www.postgresql.org/download/windows/
+
+Create a database:
+createdb mydb
+(Or use psql: psql postgres, then CREATE DATABASE mydb;)
 
 Then in your Go project:
 go get -u gorm.io/gorm
@@ -42,7 +50,8 @@ import (
 )
 
 func main() {
-    dsn := "host=localhost user=postgres password=postgres dbname=mydb port=5432 sslmode=disable"
+    // Adjust user/password based on your Postgres setup
+    dsn := "host=localhost user=yourusername password=yourpassword dbname=mydb port=5432 sslmode=disable"
     db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
     if err != nil {
         panic("failed to connect database")
