@@ -24,5 +24,3 @@ This repository includes implementations for:
 ## Getting Started
 
 See `setup-instructions.txt` for basic setup instructions for each technology stack.
-
-# build-ai-platforms-from-scratch
